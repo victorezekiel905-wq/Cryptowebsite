@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About SwiftCipher — Our story, mission, and the team behind 5 years of crypto market excellence. Established 2021." />
+  <title>About Us | SwiftCipher — Est. 2021</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23F3BA2F'/><text y='.9em' font-size='75' font-family='Arial Black' font-weight='900' fill='%230B0E11' x='12'>S</text></svg>" />
+  <style>
+    .about-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    .about-img-block {
+      position: relative;
+    }
+    .about-img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, rgba(243,186,47,0.1), rgba(108,99,255,0.1));
+      border: 1px solid var(--border-glass);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-img-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F3BA2F' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .about-stat-overlay {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: rgba(15,19,24,0.95);
+      border: 1px solid var(--border-gold);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      backdrop-filter: blur(20px);
+    }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .mission-card {
+      padding: 2rem 1.75rem;
+      text-align: center;
+    }
+    .mission-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .values-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .value-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 14px;
+    }
+    .value-item .vi-icon {
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .value-item h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .value-item p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    @media (max-width: 768px) {
+      .about-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .mission-grid { grid-template-columns: 1fr; }
+      .values-list { grid-template-columns: 1fr; }
+      .about-stat-overlay { position: static; margin-top: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="market.html">Market Data</a>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Invest</a>
+  </nav>
+  <div class="mobile-cta-group">
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="mobile-btn-signin">Sign In</a>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="mobile-btn-signup">Sign Up — It's Free</a>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar scrolled" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">SC</div>
+    <span class="nav-logo-text">Swift<span>Cipher</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="market.html">Market Data</a></li>
+    <li><a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Invest</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-signin">Sign In</a>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-signup">Sign Up</a>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="section-tag" style="margin: 0 auto 1rem; display: inline-flex;">🏛️ Our Story</div>
+  <h1>About <span style="color: var(--accent-gold);">SwiftCipher</span></h1>
+  <p>Five years of building the most trusted crypto investment infrastructure in the market. Meet the team and story behind the platform.</p>
+</div>
+
+<!-- ═══════════════ ABOUT INTRO ════════════════ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="about-hero-grid">
+      <div class="fade-up">
+        <div class="section-tag">Est. 2021</div>
+        <h2 class="section-title">From a Vision to a <span class="gold">Market Leader</span></h2>
+        <div class="divider"></div>
+        <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.25rem;">
+          SwiftCipher was founded in 2021 by a team of veteran financial technologists and blockchain engineers who recognized a critical gap in the market: retail investors deserved the same institutional-quality tools that hedge funds and proprietary trading desks had access to.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.25rem;">
+          What began as a small, high-conviction team of seven has grown into a globally recognized platform trusted by over 48,000 active investors across 180+ countries. Our infrastructure now processes billions in monthly trading volume with sub-millisecond execution.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.75;">
+          Five years later, our founding principle remains unchanged: <em style="color: var(--accent-gold);">democratize institutional-grade crypto investing for everyone.</em>
+        </p>
+
+        <div class="values-list" style="margin-top: 2rem;">
+          <div class="value-item">
+            <span class="vi-icon">🔐</span>
+            <div><h4>Security First</h4><p>Cold storage, MFA, and 24/7 SOC monitoring</p></div>
+          </div>
+          <div class="value-item">
+            <span class="vi-icon">📊</span>
+            <div><h4>Data Driven</h4><p>Every decision backed by real-time market intelligence</p></div>
+          </div>
+          <div class="value-item">
+            <span class="vi-icon">🌍</span>
+            <div><h4>Global Reach</h4><p>Accessible from 180+ countries, always</p></div>
+          </div>
+          <div class="value-item">
+            <span class="vi-icon">🤝</span>
+            <div><h4>Investor First</h4><p>Your growth is our only metric of success</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-img-block fade-up">
+        <div class="about-img-placeholder">
+          <div style="text-align: center; z-index: 1; position: relative;">
+            <div style="font-size: 4rem; margin-bottom: 0.5rem;">₿</div>
+            <div style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--accent-gold);">SwiftCipher HQ</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">London · Singapore · Dubai</div>
+          </div>
+        </div>
+        <div class="about-stat-overlay">
+          <div style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--accent-gold);">$2.4B+</div>
+          <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.1rem;">Assets Under Management</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TIMELINE ════════════════ -->
+<section class="section" style="background: linear-gradient(180deg, transparent, rgba(243,186,47,0.03), transparent);">
+  <div class="section-inner">
+    <div class="text-center fade-up">
+      <div class="section-tag">📅 Company History</div>
+      <h2 class="section-title">5 Years of <span class="gold">Market Excellence</span></h2>
+      <div class="divider" style="margin: 1.25rem auto;"></div>
+    </div>
+
+    <div style="max-width: 700px; margin: 3rem auto 0;">
+      <div class="timeline">
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Q1 2021 — Foundation</div>
+          <div class="timeline-title">SwiftCipher is Born</div>
+          <p class="timeline-desc">Founded in London by a 7-person team of ex-Goldman Sachs technologists and blockchain engineers. Seed funding of $1.2M secured. Core matching engine architecture begins development. Mission established: democratize institutional crypto investing.</p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Q3 2021 — Beta Launch</div>
+          <div class="timeline-title">Private Beta & First 1,000 Investors</div>
+          <p class="timeline-desc">Private beta launched to an invite-only cohort of 500 investors. Cold storage vault infrastructure deployed with $50M capacity. First institutional partnerships established. Platform receives its first independent security audit — zero critical vulnerabilities.</p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022 — Global Expansion</div>
+          <div class="timeline-title">Scaling to 50+ Countries</div>
+          <p class="timeline-desc">Public launch in Q1 2022. Expanded to 50 countries with localized support. Series A funding of $8.5M closed. Singapore office opened to serve Asia-Pacific markets. AML/KYC compliance framework certified. Assets under management surpassed $100M.</p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2023 — Product Innovation</div>
+          <div class="timeline-title">AI Portfolio Engine Launch</div>
+          <p class="timeline-desc">Launched the proprietary AI Portfolio Insights engine — trained on 5TB of market data. Introduced automated portfolio rebalancing and risk-adjusted return modeling. Dubai operations center opened. User base surpassed 20,000 active investors. AUM crossed $800M.</p>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024 — Market Leadership</div>
+          <div class="timeline-title">$2B AUM Milestone & 40,000 Investors</div>
+          <p class="timeline-desc">Crossed $2 billion in assets under management. Launched advanced charting suite and tax reporting tools. 40,000+ active investors across 150 countries. Introduced institutional accounts and OTC desk for high-net-worth clients. Named "Best Emerging Crypto Platform" by FinTech Weekly.</p>
+        </div>
+
+        <div class="timeline-item fade-up" style="padding-bottom: 0;">
+          <div class="timeline-dot" style="background: var(--accent-purple);"></div>
+          <div class="timeline-year" style="color: var(--accent-purple);">2025–2026 — Present</div>
+          <div class="timeline-title">48,200+ Investors · $2.4B AUM</div>
+          <p class="timeline-desc">Continuing to grow with a focus on advanced DeFi integration, multi-chain support, and enterprise-grade institutional products. New mobile app launched with biometric authentication. Expanding to 30 new markets in Africa and Southeast Asia. The mission continues.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ MISSION ════════════════ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="text-center fade-up">
+      <div class="section-tag">🎯 Our Mission</div>
+      <h2 class="section-title">We Exist to <span class="gold">Empower Investors</span></h2>
+      <div class="divider" style="margin: 1.25rem auto;"></div>
+      <p class="section-subtitle" style="margin: 0 auto; max-width: 600px;">
+        Three pillars guide every product decision, every partnership, and every line of code at SwiftCipher.
+      </p>
+    </div>
+
+    <div class="mission-grid">
+      <div class="glass-card mission-card fade-up">
+        <span class="mission-icon">🔓</span>
+        <h3 style="font-family: var(--font-display); font-weight: 700; margin-bottom: 0.75rem;">Democratize Access</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">Institutional-grade tools should not be reserved for the ultra-wealthy. Every investor deserves access to the same market intelligence, security infrastructure, and execution quality as the world's top funds.</p>
+      </div>
+      <div class="glass-card mission-card fade-up purple-hover">
+        <span class="mission-icon">🏗️</span>
+        <h3 style="font-family: var(--font-display); font-weight: 700; margin-bottom: 0.75rem;">Build for Trust</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">Transparency is non-negotiable. We publish our security audits, maintain open communication with our investor community, and never obscure fees, risks, or operational decisions that affect our users.</p>
+      </div>
+      <div class="glass-card mission-card fade-up">
+        <span class="mission-icon">📡</span>
+        <h3 style="font-family: var(--font-display); font-weight: 700; margin-bottom: 0.75rem;">Lead with Technology</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">The crypto market evolves at extraordinary speed. Our engineering team ships meaningful product improvements monthly, ensuring SwiftCipher remains the most technologically advanced retail crypto platform in the world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TEAM ════════════════ -->
+<section class="section" id="team" style="padding-top: 0;">
+  <div class="section-inner">
+    <div class="text-center fade-up">
+      <div class="section-tag">👥 The People</div>
+      <h2 class="section-title">Meet the <span class="gold">Team</span></h2>
+      <div class="divider" style="margin: 1.25rem auto;"></div>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        World-class talent from Goldman Sachs, Binance, Coinbase, and leading blockchain research institutions.
+      </p>
+    </div>
+
+    <div class="team-grid">
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #F3BA2F, #e09000);">VE</div>
+        <div class="team-name">Victor Ezekiel</div>
+        <div class="team-role">Founder & CEO</div>
+        <div class="team-bio">Blockchain architect and serial entrepreneur with 10+ years in fintech. Former lead engineer at a top-tier London prop-trading firm.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #6C63FF, #4a42e8);">AR</div>
+        <div class="team-name">Amara Reeves</div>
+        <div class="team-role">Chief Technology Officer</div>
+        <div class="team-bio">Ex-Binance infrastructure lead. Built distributed systems at scale for 100M+ users. PhD in Computer Science, MIT.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #00d4aa, #00a880);">KN</div>
+        <div class="team-name">Kenji Nakamura</div>
+        <div class="team-role">Chief Risk Officer</div>
+        <div class="team-bio">15 years in institutional risk management. Previously at Goldman Sachs Asset Management overseeing $40B in alternative investments.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #ff6b6b, #e03030);">PO</div>
+        <div class="team-name">Priya Okafor</div>
+        <div class="team-role">Head of Product</div>
+        <div class="team-bio">Former Product Director at Coinbase. Launched three award-winning fintech products used by 5M+ users across emerging markets.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #4fc3f7, #0277bd);">LB</div>
+        <div class="team-name">Lena Brandt</div>
+        <div class="team-role">Chief Compliance Officer</div>
+        <div class="team-bio">Regulatory specialist with expertise across EU, UK, and UAE markets. Certified AML professional with 12 years in financial services compliance.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #F3BA2F, #6C63FF);">TW</div>
+        <div class="team-name">Theo Whitmore</div>
+        <div class="team-role">Head of Security</div>
+        <div class="team-bio">Cybersecurity veteran and former GCHQ technical consultant. Leads SwiftCipher's 24/7 SOC team and cold storage vault architecture.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #e91e63, #880e4f);">SY</div>
+        <div class="team-name">Sophie Yang</div>
+        <div class="team-role">Head of Data Science</div>
+        <div class="team-bio">Quant researcher and AI specialist. Leads the team building SwiftCipher's AI Portfolio Insights engine. Former Bloomberg quant analyst.</div>
+      </div>
+
+      <div class="glass-card team-card fade-up">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #26A17B, #1a7a5b);">MO</div>
+        <div class="team-name">Marcus Osei</div>
+        <div class="team-role">Head of Growth</div>
+        <div class="team-bio">Growth strategist who scaled three FinTech startups from 0 to 1M users. Leads global expansion with focus on Africa and Southeast Asia markets.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section fade-up">
+  <div class="cta-inner">
+    <div class="section-tag" style="margin: 0 auto 1rem; display: inline-flex;">🚀 Join the Platform</div>
+    <h2>Ready to Invest with <span style="color: var(--accent-gold);">Confidence?</span></h2>
+    <p>Join thousands of investors who trust SwiftCipher's technology, security, and expertise.</p>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-primary" style="font-size: 1rem; padding: 1rem 2.5rem;">
+      🔑 Get Started Now
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="margin-bottom: 0.75rem; display: inline-flex;">
+        <div class="nav-logo-icon">SC</div>
+        <span class="nav-logo-text">Swift<span>Cipher</span></span>
+      </a>
+      <p>SwiftCipher is a premium crypto investment platform engineered for serious investors. Five years of market excellence, built on trust, transparency, and technology.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">✈</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">⬡</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="market.html">Market Data</a></li>
+        <li><a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Invest</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#team">Our Team</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2021–2026 SwiftCipher Ltd. All rights reserved.</p>
+    <span class="established">⚡ Established 2021 · 5 Years of Market Excellence</span>
+    <p>Crypto investments carry risk. Past performance does not guarantee future results.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

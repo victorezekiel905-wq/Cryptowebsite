@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SwiftCipher — Premium Crypto Investment Platform. Established 2021. Institutional-grade security, real-time market data, and intelligent portfolio growth." />
+  <meta name="keywords" content="crypto investment, bitcoin, ethereum, portfolio, SwiftCipher, digital assets" />
+  <meta property="og:title" content="SwiftCipher | Premium Crypto Investment Platform" />
+  <meta property="og:description" content="5 Years of Market Excellence. Join thousands of investors growing their portfolio with SwiftCipher." />
+  <meta property="og:type" content="website" />
+  <title>SwiftCipher | Premium Crypto Investment Platform — Est. 2021</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23F3BA2F'/><text y='.9em' font-size='75' font-family='Arial Black' font-weight='900' fill='%230B0E11' x='12'>S</text></svg>" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     MOBILE OVERLAY MENU
+════════════════════════════════════════════ -->
+<div class="mobile-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="market.html">Market Data</a>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Invest</a>
+  </nav>
+  <div class="mobile-cta-group">
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="mobile-btn-signin">Sign In</a>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="mobile-btn-signup">Sign Up — It's Free</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">SC</div>
+    <span class="nav-logo-text">Swift<span>Cipher</span></span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="market.html">Market Data</a></li>
+    <li><a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Invest</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-signin">Sign In</a>
+    <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-signup">Sign Up</a>
+  </div>
+
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     TICKER BAR
+════════════════════════════════════════════ -->
+<div class="ticker-bar">
+  <div class="ticker-track" id="tickerTrack">
+    <!-- Populated by JS -->
+    <div class="ticker-item"><span class="coin-name">₿ BTC</span><span class="price">Loading...</span></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════ -->
+<section class="hero">
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="hero-content">
+    <!-- Left -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Live Market — Est. 2021
+      </div>
+
+      <h1>
+        The Smartest Way to<br>
+        <span class="highlight">Grow Your Crypto</span><br>
+        Portfolio
+      </h1>
+
+      <p class="hero-subtitle">
+        SwiftCipher delivers institutional-grade crypto investment infrastructure to everyday investors. Transparent, secure, and engineered for consistent portfolio growth since 2021.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-primary">
+          🚀 Start Investing
+        </a>
+        <a href="market.html" class="btn-secondary">
+          📊 View Markets
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="value" data-target="48200" data-suffix="+" data-prefix="">48,200+</span>
+          <span class="label">Active Investors</span>
+        </div>
+        <div class="hero-stat">
+          <span class="value" data-target="2.4" data-suffix="B" data-prefix="$">$2.4B</span>
+          <span class="label">Assets Under Management</span>
+        </div>
+        <div class="hero-stat">
+          <span class="value" data-target="99.97" data-suffix="%" data-prefix="">99.97%</span>
+          <span class="label">Uptime SLA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Portfolio Card -->
+    <div class="hero-visual">
+      <div style="position: relative;">
+        <!-- Floating card top-right -->
+        <div class="hero-float-card card-1">
+          <div class="float-card-value">+18.4%</div>
+          <div class="float-card-label">30-Day Return</div>
+        </div>
+
+        <!-- Main card -->
+        <div class="hero-card-main glass-card">
+          <div class="hero-card-header">
+            <span class="portfolio-label">Portfolio Overview</span>
+            <span class="portfolio-badge">▲ Live</span>
+          </div>
+          <div class="portfolio-value">$124,830.00</div>
+          <div class="portfolio-change">▲ +$8,420.00 (7.2%) this month</div>
+
+          <canvas id="hero-sparkline" class="mini-chart"></canvas>
+
+          <div class="asset-list">
+            <div class="asset-item">
+              <div class="asset-info">
+                <div class="asset-icon btc">₿</div>
+                <div>
+                  <div class="asset-name">Bitcoin</div>
+                  <div class="asset-symbol">BTC</div>
+                </div>
+              </div>
+              <div>
+                <div class="asset-price" id="hero-btc-price">$67,842.50</div>
+                <div class="asset-change-sm up" id="hero-btc-change">▲ +2.34%</div>
+              </div>
+            </div>
+            <div class="asset-item">
+              <div class="asset-info">
+                <div class="asset-icon eth">Ξ</div>
+                <div>
+                  <div class="asset-name">Ethereum</div>
+                  <div class="asset-symbol">ETH</div>
+                </div>
+              </div>
+              <div>
+                <div class="asset-price" id="hero-eth-price">$3,521.80</div>
+                <div class="asset-change-sm up" id="hero-eth-change">▲ +1.87%</div>
+              </div>
+            </div>
+            <div class="asset-item">
+              <div class="asset-info">
+                <div class="asset-icon usdt">₮</div>
+                <div>
+                  <div class="asset-name">Tether</div>
+                  <div class="asset-symbol">USDT</div>
+                </div>
+              </div>
+              <div>
+                <div class="asset-price" id="hero-usdt-price">$1.000</div>
+                <div class="asset-change-sm up" id="hero-usdt-change">▲ +0.01%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating card bottom-left -->
+        <div class="hero-float-card card-2">
+          <div class="float-card-value">🔒 Secured</div>
+          <div class="float-card-label">256-bit Encryption</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STATS BAR
+════════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item fade-up">
+      <span class="num" data-target="5" data-suffix=" Years">5 Years</span>
+      <span class="lbl">Market Excellence</span>
+    </div>
+    <div class="stat-item fade-up">
+      <span class="num" data-target="120" data-suffix="+">120+</span>
+      <span class="lbl">Supported Assets</span>
+    </div>
+    <div class="stat-item fade-up">
+      <span class="num" data-target="180" data-suffix="+">180+</span>
+      <span class="lbl">Countries Served</span>
+    </div>
+    <div class="stat-item fade-up">
+      <span class="num" data-target="24" data-suffix="/7">24/7</span>
+      <span class="lbl">Expert Support</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     WHY CHOOSE US
+════════════════════════════════════════════ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="text-center fade-up">
+      <div class="section-tag">✦ Why SwiftCipher</div>
+      <h2 class="section-title">Built for Serious <span class="gold">Investors</span></h2>
+      <div class="divider" style="margin: 1.25rem auto;"></div>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        From institutional-grade infrastructure to real-time analytics — everything you need to make confident investment decisions.
+      </p>
+    </div>
+
+    <div class="trust-grid mt-3">
+      <div class="glass-card trust-card fade-up">
+        <div class="trust-icon">🛡️</div>
+        <h3>Institutional Grade Security</h3>
+        <p>Military-grade 256-bit AES encryption, multi-signature cold storage wallets, and a dedicated SOC team monitoring your assets around the clock. Your funds are protected by the same infrastructure used by top-tier financial institutions.</p>
+      </div>
+
+      <div class="glass-card trust-card fade-up purple-hover">
+        <div class="trust-icon" style="background: var(--accent-purple-dim); border-color: rgba(108,99,255,0.3);">⚖️</div>
+        <h3>Fully Compliant Framework</h3>
+        <p>Our platform operates under a rigorous compliance framework, adhering to international AML/KYC standards. We prioritize transparency and operate with full financial accountability across all jurisdictions.</p>
+      </div>
+
+      <div class="glass-card trust-card fade-up">
+        <div class="trust-icon">⚡</div>
+        <h3>Instant Liquidity</h3>
+        <p>Execute trades and withdrawals in seconds with our high-frequency matching engine capable of processing 1.4 million transactions per second. No lock-up periods — your capital, your control.</p>
+      </div>
+
+      <div class="glass-card trust-card fade-up">
+        <div class="trust-icon">📈</div>
+        <h3>AI-Powered Insights</h3>
+        <p>Leverage our proprietary machine learning models trained on over 5 years of market data to surface actionable signals, portfolio rebalancing recommendations, and risk-adjusted return projections.</p>
+      </div>
+
+      <div class="glass-card trust-card fade-up purple-hover">
+        <div class="trust-icon" style="background: var(--accent-purple-dim); border-color: rgba(108,99,255,0.3);">🌐</div>
+        <h3>Global Market Access</h3>
+        <p>Trade 120+ digital assets across 12 major crypto pairs with deep liquidity pools. Whether you're in New York, London, Dubai, or Singapore — SwiftCipher gives you seamless, borderless market access.</p>
+      </div>
+
+      <div class="glass-card trust-card fade-up">
+        <div class="trust-icon">💎</div>
+        <h3>Premium Portfolio Tools</h3>
+        <p>Advanced charting, real-time P&L tracking, tax reporting exports, and customizable alert systems — all built into a clean, intuitive dashboard engineered for both beginner and professional investors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section class="section" style="padding-top: 0;">
+  <div class="section-inner">
+    <div class="text-center fade-up">
+      <div class="section-tag" style="background: rgba(0,212,170,0.1); border-color: rgba(0,212,170,0.25); color: #00d4aa;">★ Investor Stories</div>
+      <h2 class="section-title">Trusted by <span class="gold">Real Investors</span></h2>
+      <div class="divider" style="margin: 1.25rem auto;"></div>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        See how SwiftCipher investors are building lasting wealth through disciplined, data-driven crypto portfolios.
+      </p>
+    </div>
+
+    <div class="testimonials-grid" style="margin-top: 3rem;">
+
+      <!-- T1 -->
+      <div class="glass-card testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="profit-tag">📈 +22.7% Portfolio Growth</div>
+        <p class="testimonial-text">"I've used three other platforms before SwiftCipher — none come close to the execution speed and transparency here. My portfolio grew 22.7% in Q1 alone. The AI insights tool is genuinely impressive."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #F3BA2F, #e09000);">MR</div>
+          <div>
+            <div class="author-name">Marcus Reid</div>
+            <div class="author-detail">Portfolio Investor · London, UK</div>
+          </div>
+          <span class="verified-badge">✓ Verified</span>
+        </div>
+      </div>
+
+      <!-- T2 -->
+      <div class="glass-card testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="profit-tag">📈 +17.3% in 60 Days</div>
+        <p class="testimonial-text">"SwiftCipher's cold storage vault gave me the confidence to move a significant portion of my portfolio to crypto. The security infrastructure is on a completely different level. Very pleased."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #6C63FF, #4a42e8);">SA</div>
+          <div>
+            <div class="author-name">Sarah Adeyemi</div>
+            <div class="author-detail">Tech Entrepreneur · Lagos, NG</div>
+          </div>
+          <span class="verified-badge">✓ Verified</span>
+        </div>
+      </div>
+
+      <!-- T3 -->
+      <div class="glass-card testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="profit-tag">📈 +12% Consistent Monthly</div>
+        <p class="testimonial-text">"As a finance professional, I was skeptical. SwiftCipher's reporting suite and real-time P&L tools are comparable to Bloomberg terminals I've used. Consistent 12% monthly returns on my conservative strategy."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #00d4aa, #00a880);">JC</div>
+          <div>
+            <div class="author-name">James Chen</div>
+            <div class="author-detail">CFO, FinTech Firm · Singapore</div>
+          </div>
+          <span class="verified-badge">✓ Verified</span>
+        </div>
+      </div>
+
+      <!-- T4 -->
+      <div class="glass-card testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="profit-tag">📈 +31.5% YTD Growth</div>
+        <p class="testimonial-text">"I've been with SwiftCipher since 2022 and the platform evolution has been remarkable. From the UX to the market data APIs — every upgrade feels thoughtful. YTD I'm sitting at 31.5% growth. Remarkable."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #F3BA2F, #6C63FF);">NV</div>
+          <div>
+            <div class="author-name">Natasha Volkov</div>
+            <div class="author-detail">Independent Trader · Dubai, UAE</div>
+          </div>
+          <span class="verified-badge">✓ Verified</span>
+        </div>
+      </div>
+
+      <!-- T5 -->
+      <div class="glass-card testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <div class="profit-tag">📈 +8.4% in First Month</div>
+        <p class="testimonial-text">"I was a complete crypto beginner. SwiftCipher's onboarding, educational resources, and support team made the journey seamless. Eight percent in my very first month — I'm hooked. Building my retirement here."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #ff6b6b, #e03030);">DM</div>
+          <div>
+            <div class="author-name">David Müller</div>
+            <div class="author-detail">Small Business Owner · Berlin, DE</div>
+          </div>
+          <span class="verified-badge">✓ Verified</span>
+        </div>
+      </div>
+
+      <!-- T6 (spans 1 on lg) -->
+      <div class="glass-card testimonial-card fade-up" style="grid-column: span 1;">
+        <div class="stars">★★★★★</div>
+        <div class="profit-tag">📈 +19.2% Portfolio Growth</div>
+        <p class="testimonial-text">"The withdrawal speed alone makes SwiftCipher worth it. Instant, every time. I've recommended it to my investment club and all seven members are now active. Platform is legitimately best-in-class."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #4fc3f7, #0277bd);">AO</div>
+          <div>
+            <div class="author-name">Aisha Okonkwo</div>
+            <div class="author-detail">Investment Club Lead · Accra, GH</div>
+          </div>
+          <span class="verified-badge">✓ Verified</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA SECTION
+════════════════════════════════════════════ -->
+<section class="cta-section fade-up">
+  <div class="cta-inner">
+    <div class="section-tag" style="margin: 0 auto 1rem; display: inline-flex;">🚀 Get Started Today</div>
+    <h2>Ready to Build Real <span class="glow-text" style="color: var(--accent-gold);">Wealth?</span></h2>
+    <p>Join 48,200+ investors who chose SwiftCipher for institutional-grade crypto investing. Setup takes under 3 minutes.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank" class="btn-primary" style="font-size: 1rem; padding: 1rem 2.5rem;">
+        🔑 Create Free Account
+      </a>
+      <a href="about.html" class="btn-secondary" style="font-size: 1rem; padding: 1rem 2rem;">
+        Learn More →
+      </a>
+    </div>
+    <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1.25rem;">
+      No deposit required to explore. Full access after verification.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="margin-bottom: 0.75rem; display: inline-flex;">
+        <div class="nav-logo-icon">SC</div>
+        <span class="nav-logo-text">Swift<span>Cipher</span></span>
+      </a>
+      <p>SwiftCipher is a premium crypto investment platform engineered for serious investors. Five years of market excellence, built on trust, transparency, and technology.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" title="Twitter/X">𝕏</a>
+        <a href="#" class="social-btn" title="Telegram">✈</a>
+        <a href="#" class="social-btn" title="LinkedIn">in</a>
+        <a href="#" class="social-btn" title="Discord">⬡</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="market.html">Market Data</a></li>
+        <li><a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Invest</a></li>
+        <li><a href="https://victorezekiel905-wq.github.io/SwiftCipherUpdated/" target="_blank">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#team">Our Team</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Kit</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2021–2026 SwiftCipher Ltd. All rights reserved.</p>
+    <span class="established">⚡ Established 2021 · 5 Years of Market Excellence</span>
+    <p>Crypto investments carry risk. Past performance does not guarantee future results.</p>
+  </div>
+</footer>
+
+<script src="particles.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
