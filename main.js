@@ -2,7 +2,7 @@
 //  SwiftCipher - Main Application JS
 // =============================================
 
-const EXTERNAL_LINK = 'https://victorezekiel905-wq.github.io/SwiftCipherUpdated/';
+const EXTERNAL_LINK = 'https://swiftcipherdashboard-web.github.io/Dashboard/';
 
 // ── Navbar scroll effect ──────────────────────
 const navbar = document.querySelector('.navbar');
